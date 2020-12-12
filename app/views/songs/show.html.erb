@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+    <td> | Title</td>
+    <td> | Released</td>
+    <td> | Release Year</td>
+    <td> | Artist</td>
+    <td> | Genre</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td> | <%= @song.title %></td>
+    <td> | <%= @song.released %></td>
+    <td> | <%= @song.release_year %></td>
+    <td> | <%= @song.artist_name %></td>
+    <td> | <%= @song.genre %></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<%= button_to "Delete Song", song_path(@song), method: :delete %>
